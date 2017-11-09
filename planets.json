@@ -1,0 +1,85 @@
+{
+    "Planets": [
+      {
+        "name": "Mercury",
+        "color": "Orange",
+        "distance": "57.91 km",
+        "radius": "2340 km",
+        "year": "0.24085 Earth",
+        "day": "88 days",
+        "mass": "0.054 Earth"
+      },
+      {
+        "name": "Venus",
+        "color": "White",
+        "distance": "108.21 km",
+        "radius": "6100 km",
+        "year": "0.61521 Earth",
+        "day": "230 days",
+        "mass": "0.814 Earth"
+      },
+      {
+        "name": "Earth",
+        "color": "Blue",
+        "distance": "149.60 km",
+        "radius": "6371 km",
+        "year": "1 Earth",
+        "day": "24 hours",
+        "mass": "1.0 Earth"
+      },
+      {
+        "name": "Mars",
+        "color": "Red",
+        "distance": "227.9 km",
+        "radius": "3324 km",
+        "year": "1.881 Earth",
+        "day": "24.5 hours",
+        "mass": "0.107 Earth"
+      },
+      {
+        "name": "Jupiter",
+        "color": "Yellow",
+        "distance": "778.3 km",
+        "radius": "69750 km",
+        "year": "11.865 Earth",
+        "day": "9.8 hours",
+        "mass": "317.4 Earth"
+      },
+      {
+        "name": "Saturn",
+        "color": "Yellow",
+        "distance": "1428 km",
+        "radius": "58170 km",
+        "year": "29.65 Earth",
+        "day": "10.2 hours",
+        "mass": "95.0 Earth"
+      },
+      {
+        "name": "Uranus",
+        "color": "Yellow",
+        "distance": "2872 km",
+        "radius": "23750 km",
+        "year": "83.745 Earth",
+        "day": "10.7 hours",
+        "mass": "14.5 Earth"
+      },
+      {
+        "name": "Neptune",
+        "color": "Purple",
+        "distance": "4498 km",
+        "radius": "22400 km",
+        "year": "165.951 Earth",
+        "day": "12.7 hours",
+        "mass": "17.6 Earth"
+      },
+      {
+        "name": "Pluto",
+        "color": "Gray",
+        "distance": "5910 km",
+        "radius": "3000 km",
+        "year": "247.687 Earth",
+        "day": "6.39 days",
+        "mass": "0.2 Earth"
+        }
+    ]
+}

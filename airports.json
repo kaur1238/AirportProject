@@ -1,0 +1,34 @@
+{
+    "Airports": [
+      {
+        "listing": "East 34th Street Heliport",
+        "iata": "TSS",
+        "type": "Heliport",
+        "size": "Tiny"
+      },
+      {
+        "listing": "Blaine Municipal Airport",
+        "iata": "BWS",
+        "type": "Closed",
+        "size": "Small"
+      },
+      {
+        "listing": "Toronto City Airport",
+     	"iata": "YTZ",
+        "type": "Airport",
+        "size": "Medium"      
+      },
+      {
+        "listing": "Amsterdam Airport Schiphol",
+	"iata": "AMS",
+        "type": "Airport",
+        "size": "Large"      
+       },
+      {
+        "listing": "Detroit County Airport",
+     	"iata": "DTW",
+        "type": "Airport",
+        "size": "Large"
+      }
+    ]
+}

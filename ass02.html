@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Ass02</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    </head>
+    <body>
+        <div data-role="page" id="localstorage" data-theme="a">
+            <header data-role="header" >
+              <h1 id="header"></h1>
+            </header>          
+            <div id="ele">
+                <div id="heading" data-theme="a" class='ui-content' data-role="collapsibleset" data-filter="true" data-filter-placeholder="Search" >
+                </div>
+            </div>
+        </div>
+        <script>
+             $(document).ready(function(){
+                $.ajax({
+                 url: "airports.json",
+                 datatype: "json",
+                 success: processJson
+                }); 
+                
+                function processJson(data){				
+                    var result = '';
+                    var header = Object.keys(data)[0];                       
+                    var arrOfObj = data[header];
+                    $("#header").text(header.toString().toUpperCase());
+                    for(var i = 0; i < arrOfObj.length ; i++ ){
+                        var obj = arrOfObj[i];
+                        var h3 = obj[Object.keys(obj)[0]];                      
+                        result += '<div data-role="collapsible" data-filter="true" data-filtertext=' + h3 + '>';
+                        result += "<h3>" + h3 + "</h3>";
+                        var arr = $.map(obj, function(a){return a});
+                            for (j = 1; j < arr.length; j++ ){
+                              var keyHeading = (Object.keys(obj)[j]).toString().charAt(0).toUpperCase() + Object.keys(obj)[j].slice(1);
+                              result += "<div class='ui-block-a' style='width:20%'><p>" + keyHeading + "</p></div>";
+                              result += "<div class='ui-block-b' style='width:80%'><p>" + obj[Object.keys(obj)[j]] + "</p></div>";
+                            }
+                        result +="</div>";
+                    }
+                    $("#heading").append(result).collapsibleset("refresh");                    
+                }        
+            });            
+        </script>
+    </body>
+</html>
